@@ -1,0 +1,199 @@
+@media(max-width:992px)
+{
+    .header ul
+    {
+        display: none !important;
+    }
+    .show-header-responsive-icon
+    {
+        cursor: pointer;
+        display: block;
+        display: inline-block;
+        margin: 25px 25px 0 25px;
+    }
+
+}
+@media(max-width:1999px)
+{
+    .help-travel-txt h3
+    {
+        font-size: 21px;
+    }
+    .header-txt h2
+    {
+        margin-top: -30px;
+    }
+}
+@media(max-width:992px)
+{
+    .help-travel-txt h3
+    {
+        font-size: 18px;
+    }
+   
+}
+@media(max-width:1347px)
+{
+    .my-slider .slider-list .item
+    {
+        width: 370px;
+        height: 450px;
+    }
+}
+@media(max-width:1232px)
+{
+    .my-slider .slider-list .item
+    {
+        width: 340px;
+        height: 490px;
+    }
+}
+@media(max-width:1200px)
+{
+    .travel-wrold-img img
+    {
+        width: 500px;
+    }
+    .detiales-post
+    {
+        padding-left: 20px;
+    }
+    .detiales-post .show-detiales
+    {
+        width: 100%;
+    }
+    .list-last-hotel h3::before
+    {
+        right: 44%;
+    }
+}
+@media(max-width:1148px)
+{
+    .my-slider .slider-list .item
+    {
+        width: 300px;
+        height: 490px;
+    }
+    .travel-wrold-img img
+    {
+        width: 400px;
+        height: 380px;
+    }
+}
+@media(max-width:999px)
+{
+    .my-slider .slider-list .item
+    {
+        width: 400px;
+        height: 450px;
+    }
+    .show-hotel
+    {
+        width: 100%;
+        height: auto;
+    }
+    .table-show-info-site
+    {
+        padding-top: 25px;
+    }
+}
+@media(max-width:991px)
+{
+    
+    .sidebar-admin
+    {
+        display: none !important;
+    }
+}
+@media(max-width:890px)
+{
+    .my-slider .slider-list .item
+    {
+        width: 360px;
+        height: 450px;
+    }
+}
+@media(max-width:797px)
+{
+    .my-slider .slider-list .item
+    {
+        width: 320px;
+        height: 480px;
+    }
+    .travel-wrold-img img
+    {
+        width: 350px;
+        height: 370px;
+    }
+    
+    
+    
+}
+@media(max-width:767px)
+{
+    .travel-wrold-img img
+    {
+        display: none;
+    }
+    .list-last-hotel h3::before
+    {
+        right: 43%;
+    }
+}
+@media(max-width:710px)
+{
+    .my-slider .slider-list .item
+    {
+        width: 300px;
+        height: 480px;
+    }
+}
+@media(max-width:666px)
+{
+    .my-slider .slider-list .item
+    {
+        width: 280px;
+        height: 480px;
+    }
+    .header-txt h2
+    {
+        margin-top: -40px;
+    }
+}
+@media(max-width:615px)
+{
+    .my-slider .slider-list .item
+    {
+        width: 250px;
+        height: 530px;
+    }
+}
+@media(max-width:599px)
+{
+    .my-slider .slider-list .item
+    {
+        width: 550px;
+        height: 370px;
+    }
+}
+@media(max-width:444px)
+{
+    .header-txt h2
+    {
+        font-size: 28px;
+    }
+}
+@media(max-width:569px)
+{
+    .list-last-hotel h3::before
+    {
+        right: 40%;
+    }
+}
+@media(max-width:400px)
+{
+    .list-last-hotel h3::before
+    {
+        right: 37%;
+    }
+}

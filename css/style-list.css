@@ -1,0 +1,556 @@
+@font-face{
+    font-family: 'vazir';
+	src: url('../font/Vazir-Thin.eot') format('eot'),
+	url('../font/Vazir-Thin.ttf') format('ttf'),
+	url('../font/Vazir-Thin.woff') format('woff'),
+	url('../font/Vazir-Thin.woff2') format('woff2')
+}
+a,button,input
+{
+    outline: none;
+}
+*
+{
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    font-family: 'vazir';
+    box-sizing: border-box;
+    direction: rtl;
+    text-align: right;
+}
+
+li
+{
+    list-style: none;
+}.header
+{
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/8338.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+.header ul li
+{
+    margin: 0 25px;
+    padding: 0 10px 0 0;
+    position: relative;
+    display: inline !important;
+}
+.header ul li a
+{
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+}
+.header ul li a::before
+{
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: -18px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #000000;
+    transition: 0.3s ease-in;
+}
+.header ul li a#home::before,
+.header ul li a#blog::before
+{
+    display: none;
+}
+.header ul li:hover a
+{
+    text-decoration: none;
+    color: #d1a504;
+}
+.header ul li:hover a::before
+{
+    transform: rotate(180deg);
+    border-top-color: #f6d04d !important;
+}
+.header ul li::before,
+.header ul li::after
+{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    width: 2px;
+    height: 0;
+    background: #f6d04d;
+}
+.header ul li::after
+{
+    transition: 0.2s ease-in;
+    right: 2px;
+}
+.header ul li::before
+{
+    transition: 0.4s ease-in-out;
+    right: 0;
+}
+.header ul li:hover::before
+{
+    height: 100%;
+}
+.header ul li:hover::after
+{
+    height:70%;
+}
+.search-box-header
+{
+    width: 35%;
+    height: auto;
+    float: left;
+    margin-top: 15px;
+}
+.search-box-header form input
+{
+    border: 0;
+    border-bottom: 1.5px solid #e6b504;
+    transition: 0.4s;
+    width: 0;
+    background: transparent;
+    padding-bottom: 5px;
+}
+.search-box-header form input::placeholder
+{
+    color: white;
+}
+.search-box-header span
+{
+    cursor: pointer;
+}
+.header-txt
+{
+    margin-top: 178px;
+    text-align: center;
+}
+.header-txt h2
+{
+    display: block;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+.header ul li ul
+{
+    position: absolute;
+    top: 34px;
+    right: 0;
+    width: 200px;
+    height: auto;
+    background: rgba(255,247,247,1);
+    border-radius: 10px;
+    box-shadow: 0 0 20px 3px rgba(74, 73, 73, 0.39);
+    display: none;
+    z-index: 2;
+}
+.header ul li ul li a::before,
+.header ul li ul li a::after,
+.header ul li ul li::before,
+.header ul li ul li::after
+{
+    display: none;
+}
+.header ul li ul li
+{
+    padding: 10px 5px;
+    margin: 10px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    transition: 0.3s ease-out;
+    display: block !important;
+}
+.header ul li ul li a
+{
+    color: black;
+}
+.header ul li:hover ul li,
+.header ul li:hover ul li a
+{
+    color: black;
+}
+.header ul li ul li:hover
+{
+    background: #f5f5f5;
+    padding-right: 15px;
+}
+.show-header-responsive-icon
+{
+    display: none;
+    cursor: pointer;
+    padding: 25px 35px 0 0;
+    font-size: 20px;
+}
+.show-header-responsive
+{
+    position: fixed;
+    top: -100%;
+    right: 0;
+    width: 100%;
+    height: 0;
+    transition: 0.4s ease-in-out;
+    background: rgba(0, 0, 0, 0.596);
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.show-header-responsive #colse-header
+{
+    position: absolute;
+    top: 10%;
+    right: 45%;
+    font-size: 20px;
+    padding: 15px;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.show-header-responsive #colse-header:hover
+{
+    border-radius: 50%;
+    transform: rotate(360deg);
+}
+.show-header-responsive ul li
+{
+    font-size: 25px;
+    line-height: 50px;
+    cursor: pointer;
+}
+.show-header-responsive ul li ul
+{
+    display: none;
+}
+.show-header-responsive ul li ul li a
+{
+    color: white;
+}
+.show-header-responsive ul li ul li a:hover
+{
+    text-decoration: none;
+    color: gold;
+}
+.login-btn
+{
+    width: 150px;
+    height: auto;
+    display: inline-block;
+    padding-top:10px;
+}
+.login-register
+{
+    color: black;
+    background: #ffb549;
+    text-align: center;
+    height: 30px;
+    border-radius: 50px;
+    line-height: 25px;
+    user-select: none;
+
+}
+.login-register a
+{
+    color: black;
+}
+.login-register a:hover
+{
+    text-decoration: none;
+}
+/* 
+======== LOCATION - NAME - AND - CITY - NAME
+*/
+.city-of-iran
+{
+    width: 100%;
+    height:auto;
+    padding: 10px 0;
+}
+.city-of-iran .city-name
+{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background: transparent;
+    margin: 0 45px;
+    position: relative;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+.city-of-iran .city-name::before
+{
+    position: absolute;
+    content: '';
+    transform: scale(0);
+    top: 0;
+    z-index: -2;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.4s ease-in-out;
+    background: gold;
+    border-radius: 50%;
+}
+.city-of-iran .city-name:hover
+{
+    box-shadow: 0px 7px 20px 0px rgba(0, 0, 0, 0.1);
+}
+.city-of-iran .city-name:hover::before
+{
+    transform: scale(1);
+}
+.city-of-iran .city-name::after
+{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -75%;
+    width: 60px;
+    height: 2px;
+    background: gray;
+}
+.city-of-iran .city-name p
+{
+    color: black;
+    font-size: 22px;
+    line-height: 35px;
+    margin: 10px 0 0 0 ;
+}
+.city-of-iran .city-name a
+{
+    color: black;
+}
+.city-of-iran .city-name a:hover
+{
+    text-decoration: none;
+}
+.city-of-iran .city-name:last-child::after
+{
+    display: none;
+}
+.shwo-lsit-ticket
+{
+    width: 100%;
+    min-height: 100px;
+    margin-top: 25px;
+    overflow: hidden;
+}
+.shwo-lsit-ticket .filter-ticket
+{
+    width: 100%;
+    height: auto;
+    background: transparent;
+}
+.shwo-lsit-ticket .filter-ticket form input:not([type="submit"])
+{
+    width: 100%;
+    height: 35px;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #eee;
+    font-size: 20px;
+    margin: 15px 0;
+}
+.shwo-lsit-ticket .filter-ticket form input::placeholder
+{
+    color: black;
+    font-size: 20px;
+}
+.btn-outline-banafsh
+{
+    background: transparent;
+    border: 1px solid #9b0cbe;
+    color: #9b0cbe;
+}
+.btn-outline-banafsh:hover
+{
+    background: #9b0cbe;
+    border-color: transparent;
+    color: white;
+}
+.show-ticket
+{
+    width: 100%;
+    height: 100%;
+}
+.show-ticket .header-show-ticket
+{
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+.show-ticket .header-show-ticket img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.show-ticket .header-show-ticket::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(0deg, #5d5d5d00 , #3c3c3ca1 , #3030309c);
+    transition: 0.3s ease-in-out;
+}
+.show-ticket .header-show-ticket:hover::before{
+    height: 50%;
+}
+.body-show-ticket{
+    width: 100%;
+    height: auto;
+    background: #fafafa;
+    padding-bottom: 10px;
+}
+.show-info-ticket{
+    width: 100%;
+    height: 50px;
+    border: 1px solid #eee;
+    border-top: 0;
+    cursor: pointer;
+}
+.show-info-ticket .info-ticket{
+    width: 32%;
+    text-align: center;
+    height: 100%;
+    display: inline-block;
+    border-left: 1px solid #eee;
+    transition: all 0.5 ease-in;
+}
+.show-info-ticket .info-ticket:last-child{
+    border-left: 0;
+}
+.show-info-ticket .info-ticket i{
+    line-height: 50px;
+}
+.body-show-ticket .show-price-ticket{
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    padding-top: 10px;
+}
+.body-show-ticket .show-price-ticket div{
+    display: inline-block;
+    position: relative;
+}
+.body-show-ticket .show-price-ticket div:nth-child(1){
+    color: gold;
+    font-size: 20px;
+}
+.body-show-ticket .show-price-ticket div:nth-child(2){
+    color: goldenrod;
+    font-size: 18px;
+    top: -10px;
+    margin-left: 10px;
+}
+.body-show-ticket .show-price-ticket div:nth-child(3){
+    font-size: 20px;
+}
+.body-show-ticket .body-txt{
+    width: 80%;
+    margin: 0 auto;
+    height: auto;
+    text-align: center;
+}
+.body-show-ticket .box-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.body-show-ticket .box-link a:nth-last-child(1){
+    display: inline-block;
+    width: auto;
+    padding: 0 10px;
+    line-height: 28px;
+    color: white;
+    text-align: center;
+    height: 30px;
+    border-radius: 50px 0 0 50px;
+    background: rgb(44, 44, 44);
+    border-right: 0.5px solid #eee;
+    transition: 0.3s ease-out;
+
+}
+.body-show-ticket .box-link a:nth-last-child(2){
+    display: inline-block;
+    width: auto;
+    padding: 0 10px;
+    line-height: 28px;
+    color: white;
+    text-align: center;
+    height: 30px;
+    border-radius: 0 50px 50px 0;
+    background: rgb(44, 44, 44);
+    border-right: 0.5px solid #eee;
+    transition: 0.3s ease-out;
+}
+.body-show-ticket .box-link a:hover{
+    text-decoration: none;
+    color: black;
+    background: gold;
+}
+.text-travel-world{
+    height:auto;
+    width: 50%;
+
+}
+.form-travel-world{
+    float: left !important;
+    width:50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: auto;
+}
+.form-travel-world form{
+    position: relative;
+}
+.form-travel-world form input:not(:last-child){
+    width: 240px;
+    height: 35px;
+    background: #3c3c3c;
+    border: 0;
+    border-radius: 50px;
+    color: white;
+    padding-right: 15px;
+}
+.form-travel-world form input[type="submit"]{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border: 0;
+    cursor: pointer;
+    left: 10px;
+    left: 4px;
+    top: 2px;
+    background: #505050;
+    border-radius: 50%;
+    z-index: 2;
+}
+.form-travel-world form::before{
+    top: 6px;
+    left: 11px;
+    content: "\f177";
+    font-family: "FontAwesome";
+    font-size: 15px;
+    color: gold;
+    position: absolute;
+    z-index: 3;
+}
+.form-travel-world form input:not(:last-child)::placeholder{
+    font-size: 13px;
+    color: white;
+}
